@@ -1,0 +1,158 @@
+
+/* About Us Section */
+
+.about-section {
+    padding: 90px 0;
+    background: linear-gradient(135deg, #f0f5ff, #ffffff);
+    scroll-margin-top: 90px;
+}
+
+.about-heading {
+    margin-bottom: 60px;
+}
+
+.about-heading > span {
+    color: #1769e0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-heading h2 {
+    color: #172554;
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.about-heading h2 span {
+    color: #1769e0;
+}
+
+.about-heading p {
+    color: #64748b;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Illustration */
+
+.about-image {
+    min-height: 320px;
+    background: linear-gradient(145deg, #1769e0, #102c70);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 20px 40px rgba(23,105,224,0.2);
+    text-align: center;
+    padding: 30px;
+}
+
+.about-image i {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.about-image h2 {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.about-image p {
+    margin-top: 15px;
+}
+
+/* About Text */
+
+.about-text {
+    padding: 30px;
+}
+
+.about-text h3 {
+    color: #172554;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.about-text p {
+    color: #64748b;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+/* Feature Cards */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 70px;
+}
+
+.about-feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #e5eaf5;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.about-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(23,105,224,0.12);
+}
+
+.about-feature-card i {
+    font-size: 38px;
+    color: #1769e0;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.about-feature-card h5 {
+    color: #172554;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.about-feature-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-text {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-heading h2 {
+        font-size: 29px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-image {
+        min-height: 270px;
+    }
+}

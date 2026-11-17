@@ -1,0 +1,140 @@
+.login-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #eef4ff, #ffffff);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(20, 46, 112, 0.12);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header > i {
+    font-size: 45px;
+    color: #2563eb;
+}
+
+.login-header h2 {
+    font-weight: 800;
+    color: #142e70;
+    margin-top: 10px;
+}
+
+.login-header p {
+    color: #64748b;
+}
+
+.login-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+.login-tabs button {
+    flex: 1;
+    padding: 12px 8px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #64748b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-tabs button.active {
+    background: #2563eb;
+    color: white;
+}
+
+.login-tabs button i {
+    margin-right: 7px;
+}
+
+.login-input-group {
+    margin-bottom: 20px;
+}
+
+.login-input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #142e70;
+}
+
+.login-input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dbe3f0;
+    border-radius: 9px;
+    outline: none;
+}
+
+.login-input-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #64748b;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+.login-submit-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.login-submit-btn:hover {
+    background: #142e70;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+}
+
+.signup-link a {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px;
+    }
+}
